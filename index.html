@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Business Card</title>
+    <style>
+        :root {
+            --gold-gradient: linear-gradient(135deg, #d4af37 0%, #f9e29c 50%, #b8860b 100%);
+            --dark-bg: #121212;
+            --card-bg: #1a1a1a;
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+        }
+
+        .card {
+            width: 350px;
+            background: var(--card-bg);
+            border-radius: 25px;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border: 1px solid #333;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Decorative Background Flowers (Simplified with CSS shapes or Icons) */
+        .card::before {
+            content: "❀";
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            font-size: 100px;
+            color: rgba(212, 175, 55, 0.1);
+        }
+
+        .title-khmer {
+            font-size: 2.5rem;
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 5px;
+        }
+
+        .edition-text {
+            font-style: italic;
+            color: #d4af37;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+
+        .profile-container {
+            position: relative;
+            width: 160px;
+            height: 160px;
+            margin: 0 auto 20px;
+        }
+
+        .profile-ring {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 4px solid transparent;
+            background: var(--gold-gradient) border-box;
+            -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+            mask-composite: exclude;
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+        }
+
+        .profile-img {
+            width: 145px;
+            height: 145px;
+            border-radius: 50%;
+            margin-top: 7.5px;
+            object-fit: cover;
+            background: #333; /* Placeholder */
+        }
+
+        .name-khmer {
+            font-size: 1.8rem;
+            color: #f9e29c;
+            margin: 10px 0;
+        }
+
+        .job-title {
+            color: #aaa;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            margin-bottom: 25px;
+        }
+
+        .links-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        .link-item {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid #444;
+            border-radius: 12px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .link-item:hover {
+            background: rgba(212, 175, 55, 0.1);
+            border-color: #d4af37;
+        }
+
+        .icon {
+            width: 30px;
+            height: 30px;
+            background: var(--gold-gradient);
+            border-radius: 8px;
+            margin-right: 10px;
+        }
+
+        .link-info {
+            text-align: left;
+        }
+
+        .link-label {
+            font-size: 0.7rem;
+            color: #d4af37;
+            display: block;
+        }
+
+        .link-value {
+            font-size: 0.75rem;
+            color: #eee;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <div class="title-khmer">ឧកញ៉ា</div>
+    <div class="edition-text">Oknha Rumduol Edition</div>
+
+    <div class="profile-container">
+        <div class="profile-ring"></div>
+        <img src="https://via.placeholder.com/150" alt="Profile" class="profile-img">
+    </div>
+
+    <div class="name-khmer">ឧកញ៉ា ទេព ផល</div>
+    <div class="job-title">Founder & CEO, Rumduol Group</div>
+
+    <div class="links-grid">
+        <a href="tel:+85512345678" class="link-item">
+            <div class="icon"></div>
+            <div class="link-info">
+                <span class="link-label">Phone</span>
+                <span class="link-value">+855 12 345...</span>
+            </div>
+        </a>
+        <a href="#" class="link-item">
+            <div class="icon"></div>
+            <div class="link-info">
+                <span class="link-label">Facebook</span>
+                <span class="link-value">Oknha Top Phal</span>
+            </div>
+        </a>
+        <a href="#" class="link-item">
+            <div class="icon"></div>
+            <div class="link-info">
+                <span class="link-label">Telegram</span>
+                <span class="link-value">@OknhaTopPhal</span>
+            </div>
+        </a>
+        <a href="#" class="link-item">
+            <div class="icon"></div>
+            <div class="link-info">
+                <span class="link-label">LinkedIn</span>
+                <span class="link-value">Top Phal</span>
+            </div>
+        </a>
+    </div>
+</div>
+
+</body>
+</html>
