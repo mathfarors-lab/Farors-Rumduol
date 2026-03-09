@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-blu: #0d00ff;
+  --blue-dark: linear-gradient(
+    181deg,
+    rgba(13, 0, 255, 1) 0%,
+    rgba(34, 50, 102, 1) 28%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+body {
+  background-color: rgb(29, 30, 28);
+  /* Prevents accidental scrolling on mobile */
+  overflow: hidden; 
+}
+
+main {
+  /* Use 100% of the viewport width and height */
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.container img {
+  width: 100%;
+  height: 100%;
+  /* This ensures the image fills the screen without stretching */
+  object-fit: cover; 
+  /* Removes the border-radius for a true "full screen" feel */
+  border-radius: 0; 
+}
+
+/* For Tablets and Desktop: Keep the card-like look */
+@media screen and (min-width: 769px) {
+  main {
+    width: 100%;
+    height: 100vh;
+  }
+  .container {
+    max-width: 450px; /* Limits width on large screens */
+    height: 90vh;    /* Leaves a little space at top/bottom */
+  }
+  .container img {
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  }
+}
