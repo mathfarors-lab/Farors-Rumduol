@@ -23,9 +23,87 @@
     <!-- MAIN INDEX VIEW -->
     <!-- ======================= -->
     <div
+      style="background-color: #092743"
       id="root"
-      class="min-h-screen w-full flex items-center justify-center selection:bg-[#cb9b51]/30"
+      class="bk-[#092743] min-h-screen w-full flex items-center justify-center selection:bg-[#cb9b51]/30"
     >
+      <!-- Background SVG Patterns (kept from original) -->
+      <div
+        class="absolute top-0 left-0 w-full h-full pointer-events-none overflow-hidden opacity-30"
+      >
+        <div
+          class="absolute -top-10 -left-10 w-40 h-40"
+          style="transform: translateY(-32.8889px)"
+        >
+          <svg
+            class="w-full h-full text-[#b78923]"
+            viewBox="0 0 100 100"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M50 10C55 30 75 30 75 50C75 70 55 70 50 90C45 70 25 70 25 50C25 30 45 30 50 10Z"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-opacity="0.6"
+            ></path>
+            <path
+              d="M50 25C53 40 68 40 68 50C68 60 53 60 50 75C47 60 32 60 32 50C32 40 47 40 50 25Z"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-opacity="0.6"
+            ></path>
+          </svg>
+        </div>
+        <div
+          class="absolute -top-10 -right-10 w-40 h-40"
+          style="transform: translateY(32.8889px)"
+        >
+          <svg
+            class="w-full h-full text-[#b78923]"
+            viewBox="0 0 100 100"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M50 10C55 30 75 30 75 50C75 70 55 70 50 90C45 70 25 70 25 50C25 30 45 30 50 10Z"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-opacity="0.6"
+            ></path>
+            <path
+              d="M50 25C53 40 68 40 68 50C68 60 53 60 50 75C47 60 32 60 32 50C32 40 47 40 50 25Z"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-opacity="0.6"
+            ></path>
+          </svg>
+        </div>
+        <div
+          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 opacity-20"
+          style="transform: translateY(-16.4444px)"
+        >
+          <svg
+            class="w-full h-full text-[#cb9b51]"
+            viewBox="0 0 100 100"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M50 10C55 30 75 30 75 50C75 70 55 70 50 90C45 70 25 70 25 50C25 30 45 30 50 10Z"
+              stroke="currentColor"
+              stroke-width="0.5"
+              stroke-opacity="0.2"
+            ></path>
+            <path
+              d="M50 25C53 40 68 40 68 50C68 60 53 60 50 75C47 60 32 60 32 50C32 40 47 40 50 25Z"
+              stroke="currentColor"
+              stroke-width="0.5"
+              stroke-opacity="0.2"
+            ></path>
+          </svg>
+        </div>
+      </div>
       <div
         class="relative w-full max-w-[420px] min-h-[800px] bg-[#092743] rounded-[40px] sm:rounded-[60px] shadow-[0_30px_100px_rgba(0,0,0,0.8)] overflow-hidden border border-white/5 flex flex-col"
       >
@@ -248,7 +326,7 @@
             <div class="relative z-10 flex flex-col min-w-0">
               <span
                 class="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-black/60 font-sans truncate"
-                >ទំនាក់ទំនង</span
+                >Contact</span
               >
               <span class="text-xs font-bold text-black font-sans truncate"
                 >+855 96 744 4964</span
@@ -770,11 +848,11 @@
     <!-- ======================= -->
     <div
       id="modal-menu"
-      class="modal-hidden modal-transition fixed inset-0 z-[60] bg-black/95 flex flex-col items-center justify-center backdrop-blur-md"
+      class="modal-hidden modal-transition fixed inset-0 z-[60] bg-black/90 flex flex-col items-center justify-center "
     >
       <button
         id="close-menu-btn"
-        class="absolute top-6 right-8 p-3 rounded-full text-[#cb9b51] hover:bg-white/10 transition-colors cursor-pointer"
+        class="absolute top-6 right-10 p-3 rounded-full text-[#cb9b51] hover:bg-white/10 transition-colors cursor-pointer"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -792,29 +870,29 @@
         </svg>
       </button>
 
-      <div class="flex flex-col gap-8 text-center w-full">
+      <div class="flex flex-col gap-8 text-center  ">
         <button
           id="nav-home"
-          class="text-3xl font-sans font-bold text-white hover:text-[#cb9b51] transition-colors tracking-wide"
+          class="text-3xl font-sans font-bold text-white hover:text-[#cb9b51] transition-colors tracking-wide  hover:scale-110 transition-transform"
         >
           Home
         </button>
         <button
           id="nav-about"
-          class="text-3xl font-sans font-bold text-white hover:text-[#cb9b51] transition-colors tracking-wide"
+          class="text-3xl font-sans font-bold text-white hover:text-[#cb9b51] transition-colors tracking-wide hover:scale-110 transition-transform"
         >
           About US
         </button>
         <button
           id="nav-share"
-          class="text-3xl font-sans font-bold text-white hover:text-[#cb9b51] transition-colors tracking-wide"
+          class="text-3xl font-sans font-bold text-white hover:text-[#cb9b51] transition-colors tracking-wide  hover:scale-110 transition-transform"
         >
           Share Card
         </button>
         <a
           href="https://t.me/farors07"
           target="_blank"
-          class="text-3xl font-sans font-bold text-white hover:text-[#cb9b51] transition-colors tracking-wide"
+          class="text-3xl font-sans font-bold text-white hover:text-[#cb9b51] transition-colors tracking-wide  hover:scale-110 transition-transform"
           >Contact Us</a
         >
       </div>
@@ -825,22 +903,176 @@
     <!-- ======================= -->
     <div
       id="page-about"
-      class="modal-hidden modal-transition fixed inset-0 z-[55] bg-[#0f0f0f] overflow-y-auto custom-scrollbar"
+      class="modal-hidden modal-transition fixed inset-0 z-[55] bg-[#092743] overflow-y-auto custom-scrollbar"
     >
+      <!-- Background SVG Patterns (kept from original) -->
       <div
-        class="max-w-[600px] mx-auto min-h-screen px-6 py-12 relative flex flex-col"
+        class="absolute top-0 left-0 w-full h-full pointer-events-none overflow-hidden opacity-30"
+      >
+        <div
+          class="absolute -top-10 -left-10 w-40 h-40"
+          style="transform: translateY(-32.8889px)"
+        >
+          <svg
+            class="w-full h-full text-[#b78923]"
+            viewBox="0 0 100 100"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M50 10C55 30 75 30 75 50C75 70 55 70 50 90C45 70 25 70 25 50C25 30 45 30 50 10Z"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-opacity="0.6"
+            ></path>
+            <path
+              d="M50 25C53 40 68 40 68 50C68 60 53 60 50 75C47 60 32 60 32 50C32 40 47 40 50 25Z"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-opacity="0.6"
+            ></path>
+          </svg>
+        </div>
+        <div
+          class="absolute -top-10 -right-10 w-40 h-40"
+          style="transform: translateY(32.8889px)"
+        >
+          <svg
+            class="w-full h-full text-[#b78923]"
+            viewBox="0 0 100 100"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M50 10C55 30 75 30 75 50C75 70 55 70 50 90C45 70 25 70 25 50C25 30 45 30 50 10Z"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-opacity="0.6"
+            ></path>
+            <path
+              d="M50 25C53 40 68 40 68 50C68 60 53 60 50 75C47 60 32 60 32 50C32 40 47 40 50 25Z"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-opacity="0.6"
+            ></path>
+          </svg>
+        </div>
+        <div
+          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 opacity-20"
+          style="transform: translateY(-16.4444px)"
+        >
+          <svg
+            class="w-full h-full text-[#cb9b51]"
+            viewBox="0 0 100 100"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M50 10C55 30 75 30 75 50C75 70 55 70 50 90C45 70 25 70 25 50C25 30 45 30 50 10Z"
+              stroke="currentColor"
+              stroke-width="0.5"
+              stroke-opacity="0.2"
+            ></path>
+            <path
+              d="M50 25C53 40 68 40 68 50C68 60 53 60 50 75C47 60 32 60 32 50C32 40 47 40 50 25Z"
+              stroke="currentColor"
+              stroke-width="0.5"
+              stroke-opacity="0.2"
+            ></path>
+          </svg>
+        </div>
+      </div>
+      <div
+        class="max-w-[420px] mx-auto min-h-screen rounded-[40px] sm:rounded-[60px] shadow-[0_30px_100px_rgba(0,0,0,0.8)] overflow-hidden border border-white/5 px-6 py-12 relative flex flex-col"
       >
         <!-- Header area -->
         <div
-          class="flex items-center justify-between mb-10 pb-4 border-b border-[#cb9b51]/20 sticky top-0 bg-[#0f0f0f]/90 backdrop-blur-md pt-6 z-10"
+          class="flex items-center justify-between mb-10 pb-4 border-b border-[#cb9b51]/20 sticky top-0 bg-[#092743]/90 backdrop-blur-md pt-6 z-10"
         >
           <h1 class="text-2xl font-bold gold-text font-sans tracking-wide">
             About US
           </h1>
           <button
             id="close-about-btn"
-            class="p-2 rounded-full bg-black border border-[#cb9b51]/40 text-[#cb9b51] hover:bg-[#cb9b51]/10 transition-colors cursor-pointer"
+            class="p-2 rounded-full bg-black border border-[#cb9b51]/40 text-[#cb9b51] hover: bg-[#cb9b51]/10 transition-colors cursor-pointer"
           >
+            <!-- Background SVG Patterns (kept from original) -->
+            <div
+              class="absolute top-0 left-0 w-full h-full pointer-events-none opacity-30"
+            >
+              <div
+                class="absolute -top-10 -left-10 w-40 h-40"
+                style="transform: translateY(-32.8889px)"
+              >
+                <svg
+                  class="w-full h-full text-[#b78923]"
+                  viewBox="0 0 100 100"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M50 10C55 30 75 30 75 50C75 70 55 70 50 90C45 70 25 70 25 50C25 30 45 30 50 10Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-opacity="0.6"
+                  ></path>
+                  <path
+                    d="M50 25C53 40 68 40 68 50C68 60 53 60 50 75C47 60 32 60 32 50C32 40 47 40 50 25Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-opacity="0.6"
+                  ></path>
+                </svg>
+              </div>
+              <div
+                class="absolute -top-10 -right-10 w-40 h-40"
+                style="transform: translateY(32.8889px)"
+              >
+                <svg
+                  class="w-full h-full text-[#b78923]"
+                  viewBox="0 0 100 100"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M50 10C55 30 75 30 75 50C75 70 55 70 50 90C45 70 25 70 25 50C25 30 45 30 50 10Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-opacity="0.6"
+                  ></path>
+                  <path
+                    d="M50 25C53 40 68 40 68 50C68 60 53 60 50 75C47 60 32 60 32 50C32 40 47 40 50 25Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-opacity="0.6"
+                  ></path>
+                </svg>
+              </div>
+              <div
+                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 opacity-20"
+                style="transform: translateY(-16.4444px)"
+              >
+                <svg
+                  class="w-full h-full text-[#cb9b51]"
+                  viewBox="0 0 100 100"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M50 10C55 30 75 30 75 50C75 70 55 70 50 90C45 70 25 70 25 50C25 30 45 30 50 10Z"
+                    stroke="currentColor"
+                    stroke-width="0.5"
+                    stroke-opacity="0.2"
+                  ></path>
+                  <path
+                    d="M50 25C53 40 68 40 68 50C68 60 53 60 50 75C47 60 32 60 32 50C32 40 47 40 50 25Z"
+                    stroke="currentColor"
+                    stroke-width="0.5"
+                    stroke-opacity="0.2"
+                  ></path>
+                </svg>
+              </div>
+            </div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
